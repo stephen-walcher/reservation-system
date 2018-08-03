@@ -13,6 +13,8 @@ This application is a demonstration of a generic hotel reservation system that d
 To run this application, simply clone the code to a destination of your choosing and run the following command:
 `docker-compose up`
 
+From there, you should be able to see the application by visiting `http://localhost:8082/`
+
 *Make sure to have [Docker](https://www.docker.com/) and [Docker-Compose](https://docs.docker.com/compose/) installed first*
 
 ## TODOs
