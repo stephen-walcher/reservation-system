@@ -20,4 +20,4 @@ const ReservationSchema = Mongoose.Schema({
 // Create the Mongoose,js model based on the created schema
 const Reservation = Mongoose.model('reservations', ReservationSchema);
 
-export Reservation;
+export { Reservation };
