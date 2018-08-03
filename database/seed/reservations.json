@@ -1,0 +1,2 @@
+{ "_id" : { "$oid" : "5b60cb5c5b731649436d81ad" }, "name" : "John Doe", "hotelName" : "ABC Hotels", "arrivalDate" : { "$date" : "2018-09-30T00:00:00.000+0000" }, "departureDate" : { "$date" : "2018-10-05T00:00:00.000+0000" } }
+{ "_id" : { "$oid" : "5b60cb5c5b731649436d81ae" }, "name" : "Jane Doe", "hotelName" : "ABC Hotels", "arrivalDate" : { "$date" : "2018-09-29T00:00:00.000+0000" }, "departureDate" : { "$date" : "2018-10-02T00:00:00.000+0000" } }

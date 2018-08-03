@@ -1,0 +1,34 @@
+version: "3.1"
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8082:8082"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8082
+      - NODE_ENV=dev
+    volumes:
+      - ./frontend/src:/usr/local/src/frontend/src
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:3000"
+    volumes:
+      - ./backend/src:/usr/local/src/backend/src
+
+  db:
+    image: mongo:4
+    ports:
+      - "27019:27017"
+    restart: always
+    environment:
+      # - MONGO_INITDB_ROOT_USERNAME=root
+      # - MONGO_INITDB_ROOT_PASSWORD=hilton
+      - MONGO_INITDB_DATABASE=hilton
+    volumes:
+      - ./database/seed:/docker-entrypoint-initdb.d
+      - ./database/data:/data/db

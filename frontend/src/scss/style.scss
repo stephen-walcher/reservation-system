@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background: #CECECE;
+  color: #111;
+  display: flex;
+  justify-content: center;
+
+  #root {
+      width: 100%;
+
+      .home-container {
+          margin-top: 25px;
+
+          h1 {
+            color: #111;
+            font-family: helvetica;
+          }
+
+          table {
+              &.reservationsList {
+                  width: 100%;
+              }
+          }
+      }
+  }
+
+  div {
+      &.NotFound {
+          width: 100%;
+          margin-top: 75px;
+          text-align: center;
+
+          div {
+              font-size: 38px;
+          }
+      }
+  }
+}
